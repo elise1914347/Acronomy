@@ -9,7 +9,7 @@ const route = Router();
 route
   .route("/createPost")
   .post(
-   
+      Validator.newAccountRules(),
     Validator.validateInput,
     Datachecker.validateDescriptionlDuplication,
   AcronomyController.createAcronomy)
