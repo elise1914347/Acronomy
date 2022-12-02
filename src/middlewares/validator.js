@@ -15,13 +15,14 @@ class Validator{
         return next();
     }
     
-    // static newAccountRules(){
-    //     return[
+    static newAccountRules(){
+        return[
         
-    //         check("description","please your already exist").isAlpha()
+            
+            check("description","your description sis empty").isAlphanumeric()
            
-    //     ];
-    // }
+        ];
+    }
    
      
     }
